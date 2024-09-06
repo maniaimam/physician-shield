@@ -1731,7 +1731,7 @@ body{
 }
 .single-clients {
     display: flex;
-	direction: column;
+	direction: row;
     justify-content: center;
     align-items: center;
 }
