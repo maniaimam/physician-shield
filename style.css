@@ -1731,6 +1731,13 @@ body{
 	float: none;
 	padding: 0 35px;
 }*/
+.clients{
+	background-image:url('img/client-bg.jpg');
+	background-size:cover;
+	background-position:center;
+	padding:100px 0px;
+	position:relative;
+}
 .clients .single-clients {
     display: flex;
     justify-content: center;
@@ -1743,6 +1750,7 @@ body{
     max-height: 100%;
     width: auto;
     height: auto;
+	text-align: center;
     object-fit: contain;
     padding: 0 35px;
 }
