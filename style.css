@@ -1714,7 +1714,7 @@ body{
 /*========================
 	Start Clients CSS
 ==========================*/
-.clients{
+/*.clients{
 	background-image:url('img/client-bg.jpg');
 	background-size:cover;
 	background-position:center;
@@ -1730,6 +1730,21 @@ body{
 	text-align: center;
 	float: none;
 	padding: 0 35px;
+}*/
+.clients .single-clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust this value as needed */
+}
+
+.clients .single-clients img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    padding: 0 35px;
 }
 /*========================
 	End Clients CSS
