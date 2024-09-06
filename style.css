@@ -1714,23 +1714,6 @@ body{
 /*========================
 	Start Clients CSS
 ==========================*/
-/*.clients{
-	background-image:url('img/client-bg.jpg');
-	background-size:cover;
-	background-position:center;
-	padding:100px 0px;
-	position:relative;
-}
-.clients .single-clients{
-	
-}
-.clients .single-clients img {
-	width: 100%;
-	cursor: pointer;
-	text-align: center;
-	float: none;
-	padding: 0 35px;
-}*/
 .clients{
 	background-image:url('img/client-bg.jpg');
 	background-size:cover;
@@ -1738,20 +1721,21 @@ body{
 	padding:100px 0px;
 	position:relative;
 }
-.clients .single-clients {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100px; /* Adjust this value as needed */
+.single-clients{
+	height: 100px; 
 }
-
-.clients .single-clients img {
+.single-clients img {
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
-    object-fit: contain;
-    padding: 0 35px;
+}
+.clients .single-clients img {
+	width: 100%;
+	cursor: pointer;
+	text-align: center;
+	float: none;
+	padding: 0 35px;
 }
 /*========================
 	End Clients CSS
