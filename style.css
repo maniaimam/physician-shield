@@ -1714,34 +1714,22 @@ body{
 /*========================
 	Start Clients CSS
 ==========================*/
-.clients {
-    background-image: url('img/client-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0px;
-    position: relative;
+.clients{
+    background-image:url('img/client-bg.jpg');
+    background-size:cover;
+    background-position:center;
+    padding:100px 0px;
+    position:relative;
 }
-
-.clients-slider {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.clients .single-clients{
+    
 }
-
-.single-clients {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px; /* Adjust this value as needed */
-    padding: 0 15px; /* Add some horizontal padding */
-}
-
-.single-clients img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: contain;
+.clients .single-clients img {
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    float: none;
+    padding: 0 35px;
 }
 /*========================
 	End Clients CSS
