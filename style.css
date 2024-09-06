@@ -1733,7 +1733,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px; /* Adjust this value as needed */
 }
 /*========================
 	End Clients CSS
