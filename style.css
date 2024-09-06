@@ -1737,11 +1737,9 @@ body{
 	background-position:center;
 	padding:100px 0px;
 	position:relative;
-	justify-content: center;
-    align-items: center;
 }
 .clients .single-clients {
-    display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     height: 100px; /* Adjust this value as needed */
@@ -1752,7 +1750,6 @@ body{
     max-height: 100%;
     width: auto;
     height: auto;
-	text-align: center;
     object-fit: contain;
     padding: 0 35px;
 }
