@@ -217,6 +217,9 @@
 									</div>
 								</form>
 								<!--/ End Form -->
+								  <div id="successMessage" style="display: none; color: green; margin-top: 20px;">
+									Your message has been sent successfully. We'll get back to you soon!
+								  </div>
 							</div>
 						</div>
 					</div>
@@ -271,7 +274,14 @@
 				body: JSON.stringify(Object.fromEntries(formData))
 			  });
 			  if (response.ok) {
-				window.location.href = 'mail-success.html';
+				// Show success message
+				document.getElementById('successMessage').style.display = 'block';
+                // Clear the form
+                e.target.reset();
+                // Optionally, hide the success message after a few seconds
+                setTimeout(() => {
+                document.getElementById('successMessage').style.display = 'none';
+                }, 5000);
 			  } else {
 				alert('Failed to send email. Please try again.');
 			  }
