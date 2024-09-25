@@ -179,7 +179,7 @@
 								<h2>Contact Us</h2>
 								<p>If you have any questions please feel free to contact us.</p>
 								<!-- Form -->
-								<form class="form" method="post" action="mail/mail.php">
+								<form  id="contactForm" class="form">
 									<div class="row">
 										<div class="col-lg-6">
 											<div class="form-group">
@@ -260,6 +260,23 @@
 			</div>
 		</section>
 		<!--/ End Contact Us -->
+
+		<script>
+			document.getElementById('contactForm').addEventListener('submit', async (e) => {
+			  e.preventDefault();
+			  const formData = new FormData(e.target);
+			  const response = await fetch('/api/submit-form', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify(Object.fromEntries(formData))
+			  });
+			  if (response.ok) {
+				window.location.href = 'mail-success.html';
+			  } else {
+				alert('Failed to send email. Please try again.');
+			  }
+			});
+			</script>
 		
 		<!-- Footer Area -->
 		<footer id="footer" class="footer ">
@@ -308,7 +325,7 @@
 								<h2>Contact Us</h2>
 								<p>Our customer service is always here to help you</p>
 								<ul class="time-sidual">
-									<li class="day"> <b>Email us at contactus@physicianshield.us</b></li>
+									<li class="day">Email us at contactus@physicianshield.us</li>
 								</ul>
 							</div>
 						</div>
