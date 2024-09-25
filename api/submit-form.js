@@ -20,15 +20,15 @@ Message: ${message}
     port: 587,
     secure: false,
     auth: {
-      user: 'contactus@physicianshield.us',
+      user: 'sarah@physicianshield.us',
       pass: process.env.EMAIL_PASSWORD
     }
   });
 
   try {
     await transporter.sendMail({
-      from: '"Physician Shield Contact Form" <contactus@physicianshield.us>',
-      to: 'contactus@physicianshield.us',
+      from: '"Physician Shield Contact Form" <sarah@physicianshield.us>',
+      to: 'sarah@physicianshield.us',
       subject: `New Contact Form Message: ${subject}`,
       text: emailMessage,
     });
